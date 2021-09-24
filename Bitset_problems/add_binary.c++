@@ -13,7 +13,7 @@ string add_binary(string str1,string str2)
 	while(n>=0||m>=0||carry)
 	{
 		int val1= (n>=0 and str1[n]=='1')?1:0;
-		int val2=(m>=0 and str2[n]=='1')?1:0;
+		int val2=(m>=0 and str2[m]=='1')?1:0;
 
 		 ans=((((val1+val2+carry)%2)==0)?'0':'1')+ans;
 		  carry=(val1+val2+carry)/2;
